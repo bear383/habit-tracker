@@ -1,164 +1,336 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color: bisque;
-    color: rebeccapurple;
-    margin-top: 1%;
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: bisque;
+  color: rebeccapurple;
+  margin-top: 1%;
 }
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(248, 190, 120);
-    top: 5%;
-    width: 80%;
-    box-shadow: 0 4px 6px rebeccapurple;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(248, 190, 120);
+  top: 5%;
+  width: 80%;
+  box-shadow: 0 4px 6px rebeccapurple;
 }
-nav a{
-    float: left;
-    display: block;
-    color: rebeccapurple;
-    text-align: center;
-    padding: 14px 16px;
-    font-weight: bold;
-    text-decoration: none;
+nav a {
+  float: left;
+  display: block;
+  color: rebeccapurple;
+  text-align: center;
+  padding: 14px 16px;
+  font-weight: bold;
+  text-decoration: none;
 }
-nav a:hover{
-    background:rgb(237, 152, 26);
+nav a:hover {
+  background: rgb(237, 152, 26);
 }
-.logo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0 3%; 
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 3%;
 }
 
-h1{
-    font-weight: bold;
-    text-align: center;
-    font-size: 80px;
-    margin-bottom: 0px;
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 0px;
 }
-p{
-    text-align: center;
-    margin-top: 0px;
-    font-weight: bold;
-    font-size: 20px;
+p {
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 20px;
 }
-.start{
-    font-weight: bold;
-    text-align: center;
-    font-size: large;
-    background-color: rgb(248, 190, 120);
-    border: 0;
-    border-radius: 20px;
-    margin: 2% 42%;
-    padding: 2%;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+.start {
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+  background-color: rgb(248, 190, 120);
+  border: 0;
+  border-radius: 20px;
+  margin: 2% 42%;
+  padding: 2%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
-.start:hover{
-    transform: scale(1.1);
+.start:hover {
+  transform: scale(1.1);
 }
-.arrow{
-    color: rebeccapurple;
-    display: flex;
-    justify-content: center;
-    margin: 5%;
-    margin-bottom: 20%;
-    transform: scale(5);
+.arrow {
+  color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  margin-bottom: 20%;
+  transform: scale(5);
 }
 /* why track? */
-.q{
-    background-color: white;
-    font-weight: bold;
-    border-radius: 15px;
-    margin: 5% 10% 0 10%;
-    margin-bottom: 50px;
-    padding: 70px;
-    box-shadow: 0 4px 6px rebeccapurple;
+.q {
+  background-color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  margin: 5% 10% 0 10%;
+  margin-bottom: 50px;
+  padding: 70px;
+  box-shadow: 0 4px 6px rebeccapurple;
+}
+/* login.html */
+.login-page {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+}
+.login-section {
+  display: flex;
+  flex-direction: column;
+  margin: 2.4% 7%;
+  min-height: 500px;
+  background: white;
+  padding: 20px 100px;
+  border-radius: 15px;
+  align-items: center;
+  box-shadow: 0 4px 6px rebeccapurple;
+}
+.login-section .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.login-section .info .input {
+  background-color: rgb(242, 242, 242);
+  border: none;
+  padding: 15px;
+  width: 60vh;
+  font-size: 100%;
+}
+.submit {
+  text-align: center;
+  font-size: large;
+  background-color: rgb(248, 190, 120);
+  color: rebeccapurple;
+  font-weight: bold;
+  border: 0;
+  border-radius: 20px;
+  margin: 2% 34%;
+  padding: 2% 8%;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #eda048;
+}
+.login-section .register {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-section .register a {
+  color: #5a2d82;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.login-section .register a:hover {
+  text-decoration: underline;
+}
+.logo-section {
+  text-align: center;
+  max-width: 50%;
+}
+
+.logo-section img {
+  width: 120px;
 }
 
 /*select.html - choose your goals*/
-.goals{
-    text-align: center;
-    margin: 30px 0;
+.make-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 20px;
 }
-.goal-sections{
-    display: grid;
-    grid-template-columns: repeat(4, 10rem);
-    justify-content: center;
-    gap: 40px;
-    margin: 0 auto;
-    width: 80%;
+.make-account .info {
+  display: flex;
+  flex-direction: column;
+  margin: 4% 7%;
+  background: white;
+  padding: 20px 100px;
+  border-radius: 15px;
+  align-items: center;
+  box-shadow: 0 4px 6px rebeccapurple;
 }
-.goal{
-    background-color: white;
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 6px rebeccapurple;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+
+.make-account .info .input {
+  background-color: rgb(242, 242, 242);
+  border: none;
+  padding: 15px;
+  width: 70vh;
+  font-size: 100%;
+  margin-bottom: 15px;
+}
+
+.goals {
+  text-align: center;
+}
+.goal-sections {
+  display: grid;
+  grid-template-columns: repeat(4, 10rem);
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  width: 80%;
+}
+.goal {
+  background-color: white;
+  border-radius: 15px;
+  padding: 5%;
+  text-align: center;
+  box-shadow: 0 4px 6px rebeccapurple;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 .goal:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
+}
+.goal span {
+  font-size: 18px;
+  color: rebeccapurple;
+  display: block;
+  margin-top: 8%;
+}
+.goal i {
+  width: 20%;
+  height: 20%;
+  margin-top: 10%;
 }
 
-
-/* progress.html - record your progress */
-h2{
-    font-weight: bold;
+/* record.html - record you progress */
+.record {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    font-size: 60px;
-    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .tasks-box{
+    background-color: white;
+    padding: 1% 5%;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rebeccapurple;
+    text-align: left;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .tab {
+    background-color: white;
+    float: left;
+    padding: 5px 25px;
+    cursor: pointer;
+    color: #4c0070;
+    border-radius: 10px 10px 0 0;
+    margin: 0 5px;
+    transition: 0.3s;
+  }
+
+  .tab:hover{
+    background-color: #e9c7ec;
+  }
+
+  .tab.active {
+    background-color: #4c0070;
+    color: #fff;
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    font-weight: 500;
+  }
+
+  .tabcontent.active {
+    display: block;
+  }
+
+  .task {
+    margin: 3%;
+  }
+
+/* !! DELETE progress.html - record your progress */
+h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 1%;
 }
-.days-line{
-    /* display: flex;
+.days-line {
+  /* display: flex;
     justify-content: center;
     gap: 10%; */
-    display: grid;
-    grid-template-columns: repeat(8, 8rem);
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(8, 8rem);
+  justify-content: center;
 }
-.rectangle{
-    height: 2px;
-    width: 80%;
-    background-color: black;
-    position:absolute;
+.rectangle {
+  height: 2px;
+  width: 80%;
+  background-color: black;
+  position: absolute;
 }
-.star{
-    font-size: 50px;
-    cursor: pointer;
+.star {
+  font-size: 50px;
+  cursor: pointer;
 }
-.day{
-    font-weight: bolder;
-    font-size: 20px;
+.day {
+  font-weight: bolder;
+  font-size: 20px;
 }
-.check-in{
+.check-in {
   background-color: white;
   padding: 1% 2cap;
   margin: 2% 5% 10%;
   border-radius: 20px;
 }
 textarea {
-    width: 100%;
-    height: 100px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-  }
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
 
-
-  
+/* game-html */
+.dino {
+  display: block;
+  margin: 2% auto;
+  width: 20%;
+}

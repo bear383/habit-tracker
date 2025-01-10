@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>little ♡ steps</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <nav>
+        <div class="logo">little♡steps</div>
+        <div class="links">
+          <a href="">Habits</a>
+          <a href="">Tips</a>
+          <a href="">Profile</a>
+          <a href="" class="game">Game</a>
+        </div>
+      </nav>
+    </section>
+
+    <section class="record">
+      <h2>record your progress</h2>
+      <p>Check the box if you completed the task today</p>
+      <div class="tabs">
+        <div class="tab active" data-target="diet">Diet</div>
+        <div class="tab" data-target="screen">Screen</div>
+        <div class="tab" data-target="sleep">Sleep</div>
+      </div>
+      <div class="tasks-box">
+        <div id="diet" class="tabcontent active">
+          <div class="task">
+            <input type="checkbox"/> Breakfast included fruits/veggies, dairy,
+            wheat, protein
+          </div>
+          <div class="task">
+            <input type="checkbox"/> Lunch included fruits/veggies, dairy,
+            wheat, protein
+          </div>
+          <div class="task">
+            <input type="checkbox"/> Dinner included fruits/veggies, dairy,
+            wheat, protein
+          </div>
+        </div>
+
+        <div id="screen" class="tabcontent">
+          <div class="task">
+            <input type="checkbox"/> Max screen time 2 hours
+          </div>
+          <div class="task">
+            <input type="checkbox"/> Breaks every 30 minutes
+          </div>
+          <div class="task">
+            <input type="checkbox"/> No screens before bed
+          </div>
+        </div>
+
+        <div id="sleep" class="tabcontent">
+          <div class="task"><input type="checkbox"/> Slept for 7-8 hours</div>
+          <div class="task">
+            <input type="checkbox"/> Maintained a consistent bedtime
+          </div>
+          <div class="task">
+            <input type="checkbox"/> Maintained a consistent wake up time
+          </div>
+        </div>
+      </div>
+
+      <button class="submit">Save</button>
+    </section>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tabcontent');
+    
+        tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+            // make tabs not active
+            tabs.forEach(t => t.classList.remove("active"));
+            tabContents.forEach(content => content.classList.remove("active"));
+    
+            // make clicked tab active
+            tab.classList.add("active");
+            document.getElementById(tab.getAttribute('data-target')).classList.add("active");
+          });
+        });
+    </script>
+  </body>
+</html>
